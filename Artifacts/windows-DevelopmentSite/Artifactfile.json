@@ -1,6 +1,8 @@
 {
   "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
+  "title": "SAT Development Environment 1",
+  "description": "Instala sitio web X mas base de datos Y",
   "parameters": {
     "hostingPlanName": {
       "type": "string",
