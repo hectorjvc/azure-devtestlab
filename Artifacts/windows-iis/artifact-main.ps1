@@ -1,21 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Marketplace
-Explore
- @hectorjvc
- Sign out
- Watch 70
-  Star 137  Fork 193 Azure/azure-devtestlab
- Code  Issues 7  Pull requests 8  Projects 0  Wiki  Insights
-Branch: master Find file Copy pathazure-devtestlab/Artifacts/windows-iis/artifact-main.ps1
-a956a46  on 7 Nov 2017
-@workleodig workleodig Create artifact to install IIS
-1 contributor
-RawBlameHistory     
-73 lines (58 sloc)  2.01 KB
 function Handle-LastError
 {
     [CmdletBinding()]
@@ -88,15 +70,3 @@ finally
 {
     popd
 }
-© 2018 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-API
-Training
-Shop
-Blog
-About
