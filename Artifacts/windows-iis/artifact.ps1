@@ -1,21 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Marketplace
-Explore
- @hectorjvc
- Sign out
- Watch 70
-  Star 137  Fork 193 Azure/azure-devtestlab
- Code  Issues 7  Pull requests 8  Projects 0  Wiki  Insights
-Branch: master Find file Copy pathazure-devtestlab/Artifacts/windows-iis/artifact.ps1
-69d5b4c  on 9 Nov 2017
-@workleodig workleodig Finishing a sentence properly
-1 contributor
-RawBlameHistory     
-38 lines (33 sloc)  1.74 KB
 $artifactLogFolder = Join-path -path $env:ProgramData -childPath 'DTLArt_IIS'
 New-Item -ItemType Directory -Force -Path $artifactLogFolder
 
@@ -52,16 +34,3 @@ elseif ($winVerString -like 'Microsoft Windows 10*' -or $winVerString -like 'Mic
 else {
     Write-Error "This script does not support Windows version $winVerString"
 }
-
-© 2018 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-API
-Training
-Shop
-Blog
-About
