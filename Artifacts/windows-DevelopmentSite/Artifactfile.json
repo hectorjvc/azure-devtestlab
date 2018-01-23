@@ -1,11 +1,10 @@
 {
   "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
-  "title": "SAT Development Environment 1",
-  "description": "Instala sitio web X mas base de datos Y",
   "parameters": {
     "hostingPlanName": {
       "type": "string",
+      "value": "DemoSitePlan",
       "minLength": 1
     },
     "skuName": {
@@ -38,13 +37,15 @@
       }
     },
     "administratorLogin": {
-      "type": "string"
+      "type": "string",
+      "value": "DemoAdmin"
     },
     "administratorLoginPassword": {
       "type": "securestring"
     },
     "databaseName": {
-      "type": "string"
+      "type": "string",
+      "value": "DemoDataBase"
     },
     "collation": {
       "type": "string",
@@ -88,12 +89,14 @@
     "WebApp1PackageFolder": {
       "type": "string",
       "minLength": 1,
+      "value": "WebApplication1",
       "metadata": {
         "description": "WebDeploy package location. This path is relative to the _artifactsLocation parameter"
       }
     },
     "WebApp1PackageFileName": {
       "type": "string",
+      "value": "package.zip",
       "minLength": 1,
       "metadata": {
         "description": "Name of the webdeploy package"
